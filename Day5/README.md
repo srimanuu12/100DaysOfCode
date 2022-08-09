@@ -1,3 +1,3 @@
 # Password Generator
 
-Strong password generated using desired length, the number of letters, numbers and symbols.
+Strong password generator using desired length, the number of letters, numbers and symbols.
