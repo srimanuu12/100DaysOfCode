@@ -24,5 +24,6 @@ for i in range(0,no_symbol):
 
 #random.choice - when you want to choose multiple random items from iterable (here it is list) including duplicates
 #random.sample - when you want to choose multiple random items from iterable (here it is list) without including duplicates
+
 secr_password = ''.join(random.sample(password,total_chars))
 print(f"Here is your password: {secr_password}")
