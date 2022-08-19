@@ -14,6 +14,7 @@ def cipher():
     choice = input("What do you want to do? Type 'encode' - encrypt and 'decode' - decrypt:  ")
     msg = input("Enter the message: ")
     shift_num = random.choice(range(1,52))
+    
     print(f"{choice}ed result is {caesar(choice,msg,shift_num)}")
     
     print("Do you want to try again? Type 'Yes' or 'No': ",end=" ")
