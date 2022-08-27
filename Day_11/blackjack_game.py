@@ -8,7 +8,7 @@ def cal_cards(card):
         return 0
     if 11 in card and sum(card)>21:
         card.remove(11)
-        card.append(11)
+        card.append(1)
     return sum(card)
 
 def compare(user_score,comp_score):
