@@ -1,4 +1,4 @@
-class MenuItem():
+class MenuItem:
     def __init__(self, drink, cost, water, milk, coffee):
         self.drink = drink
         self.cost = cost 
