@@ -1,0 +1,3 @@
+
+what about you?
+Created New file from different location on the current directory.
