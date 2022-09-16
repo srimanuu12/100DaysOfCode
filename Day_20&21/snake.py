@@ -36,6 +36,14 @@ class Snake:
             y_cor = self.snakes[snake -1].ycor()
             self.snakes[snake].goto(x_cor, y_cor)
         self.head.forward(MAKE_DISTANCE)
+    
+    def reset(self):
+        for snake in self.snakes:
+            snake.goto(800,800)
+
+        self.snakes.clear()
+        self.create_snake()
+        self.head = self.snakes[0]
 
     def up(self):
         if self.head.heading() != DOWN:
