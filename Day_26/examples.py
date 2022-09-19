@@ -6,7 +6,6 @@ squared_num = [num ** 2 for num in num_list]
 # print(squared_num)
 
 # Filter even numbers
-
 even_num = [num for num in num_list if not num % 2]
 # print(even_num)
 
