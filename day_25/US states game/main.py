@@ -32,11 +32,8 @@ while len(guessed_states) < 6:
             t.goto(int(state_data.x), int(state_data.y))
             t.write(answer_state)
     if answer_state == "Exit":
-        missing_states = []
-        for state in states_list:
-            if state not in guessed_states:
-                missing_states.append(state)
-
+        # LIst comprehension
+        missing_states = [state for state in states_list if state not in guessed_states]
         missed_data = pandas.DataFrame(missing_states)
         missed_data.to_csv("./100DaysOfCode/Day_25/US states game/states_to_learn.csv")
         break
