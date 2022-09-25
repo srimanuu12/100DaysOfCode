@@ -1,6 +1,6 @@
 # CSV
 #  import csv
-# with open("./100daysofcode/day_25/weather_data.csv") as f:
+# with open("./day_25/weather_data.csv") as f:
 #     data = csv.reader(f)
 #     temp = []
 #     for row in data:
@@ -9,7 +9,7 @@
 #     print(temp)
 
 import pandas
-data = pandas.read_csv("./100daysofcode/day_25/weather_data.csv")
+data = pandas.read_csv("./day_25/weather_data.csv")
 
 
 # dataframe to dictonary
@@ -47,4 +47,4 @@ data_dict = {
     "Emp_id": [3495, 4527, 7854, 4961]
 }
 data2 = pandas.DataFrame(data_dict)
-data2.to_csv("./100daysofcode/day_25/employee_data.csv")
+data2.to_csv("./day_25/employee_data.csv")

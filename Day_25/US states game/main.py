@@ -4,7 +4,7 @@ import pandas
 
 screen = turtle.Screen()
 screen.title("U.S States Game")
-image = "./100DaysOfCode/Day_25/US states game/blank_states_img.gif"
+image = "./Day_25/US states game/blank_states_img.gif"
 screen.addshape(image)
 turtle.shape(image)
 
@@ -14,7 +14,7 @@ turtle.shape(image)
 
 # turtle.onscreenclick(get_mouse_click_cor)
 # turtle.mainloop()
-data = pandas.read_csv("./100DaysOfCode/Day_25/US states game/50_states.csv")
+data = pandas.read_csv("./Day_25/US states game/50_states.csv")
 states_list = data.state.to_list()
 guessed_states = []
 
@@ -35,6 +35,6 @@ while len(guessed_states) < 6:
         # LIst comprehension
         missing_states = [state for state in states_list if state not in guessed_states]
         missed_data = pandas.DataFrame(missing_states)
-        missed_data.to_csv("./100DaysOfCode/Day_25/US states game/states_to_learn.csv")
+        missed_data.to_csv("./Day_25/US states game/states_to_learn.csv")
         break
 
